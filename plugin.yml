@@ -1,0 +1,16 @@
+name: GoodBadBoard
+version: '${project.version}'
+main: ru.goodbadworld.board.GoodBadBoard
+api-version: '1.21'
+authors: [goodbadworld]
+description: Красивый scoreboard для сервера goodbadworld
+softdepend: [Vault, PlaceholderAPI]
+commands:
+  gbboard:
+    description: Управление scoreboard
+    usage: /gbboard <toggle|reload>
+    aliases: [sb]
+permissions:
+  goodbadboard.reload:
+    description: Перезагрузка конфига
+    default: op
