@@ -1,0 +1,55 @@
+# Интервал обновления в тиках (20 тиков = 1 секунда)
+update-interval: 20
+
+# Заголовок сверху
+title: "&6&l✦ &e&lgoodbadworld &6&l✦"
+
+# Строки scoreboard (сверху вниз). Максимум 15 строк.
+# Переменные: {nick} {ping} {money} {clan}
+lines:
+  - "&8&m                    "
+  - "&f👤 Ник: &a{nick}"
+  - "&f📶 Пинг: {ping}"
+  - "&f💰 Деньги: &e{money}"
+  - "&f🛡 Клан: &b{clan}"
+  - "&f👑 Привилегия: {rank}"
+  - "&8&m                    "
+  - "&e&lgoodbadworld.falixsrv.me"
+
+# Текст, если у игрока нет клана
+no-clan: "Нет"
+
+# Плейсхолдер клана (нужен PlaceholderAPI + плагин кланов).
+# SimpleClans: %simpleclans_clan_name%
+# Если у вас другой плагин кланов - впишите его плейсхолдер.
+clan-placeholder: "%simpleclans_clan_name%"
+
+# Плейсхолдер денег, если нет Vault (нужен PlaceholderAPI). Можно оставить пустым.
+money-placeholder: "%vault_eco_balance_formatted%"
+
+# Символ валюты, если деньги берутся из Vault
+currency-symbol: "$"
+
+# Привилегия игрока (нужен PlaceholderAPI + LuckPerms).
+# Группа берётся из LuckPerms: %luckperms_primary_group_name%
+rank-placeholder: "%luckperms_primary_group_name%"
+
+# Что показывать, если привилегии нет
+no-rank: "&7Игрок"
+
+# Красивые названия групп (слева - имя группы в LuckPerms маленькими буквами)
+rank-names:
+  default: "&7Игрок"
+  vip: "&6&lVIP"
+  premium: "&b&lPremium"
+  moder: "&2&lМодератор"
+  admin: "&c&lАдмин"
+  owner: "&4&lВладелец"
+
+# Сообщения
+messages:
+  toggled-on: "&aScoreboard включён."
+  toggled-off: "&cScoreboard выключен."
+  reloaded: "&aКонфиг перезагружен."
+  no-permission: "&cУ вас нет прав."
+  players-only: "Только для игроков."
